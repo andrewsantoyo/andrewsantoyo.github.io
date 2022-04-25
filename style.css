@@ -19,12 +19,24 @@ h2 {
     float: right;
 }
 #about_me {
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
 
+.italics{
+    font-style: italic;
+}
+.float_right1{
+    float: right;
+    margin-top: -6px;
+}
+.float_right2{
+    float: right;
+    margin-top: -43px;
+}
 .location{
     float: right;
     margin-top: -6px;
