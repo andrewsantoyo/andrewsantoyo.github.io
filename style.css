@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(221, 235, 238, 0.99);
+    font-size: 20px;
+    
+}
+#Name {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: -6px;
+}
+
+
+#profile_pic {
+    height: 250px;
+    float: right;
+}
+#about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.location{
+    float: right;
+    margin-top: -6px;
+}
+.date{
+    float: right;
+    margin-top: -43px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.social_icon{
+    height: 80px;
+    padding-left: 10px;
+    font-size:0;
+    text-decoration:none;
+}
+/*
+a{
+    color:red;
+}
+*/
