@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <meta charset="utf-8">
     <title>Andrew Santoyo</title>
     <script type="text/javascript">
-        const redirects = {
-            "resume": "resume.pdf"
-        }
+      // Dictionary that has all of your redirect rules
+      // You can add additional redirects if you'd like
+      // e.g. /resume -> /resume.pdf
+      const redirects = {
+        "resume": "resume.pdf"
+      }
 
-        const path = window.location.pathname.substring(1).toLowerCase;
-    
-        const redirect = redirects[path];
-        if (redirect){
-            window.location.replace(redirect);
-        }
+      // window.location.pathname -> Get the path -> /resume
+      // .substring(1) -> remove the first character -> resume
+      // .toLowerCase() -> make sure the path name is all lowercase       
+      const path = window.location.pathname.substring(1).toLowerCase();
+
+      const redirect = redirects[path];
+      if (redirect) {
+        // Redirect to the desired location
+        window.location.replace(redirect);
+      } else {
+        // If the path doesn't exist, you can redirect to your main page
+        // or you can remove this line of code if you just want to show the 404 page.
+        window.location.replace("https://andrewsantoyo.github.io/");
+      }
     </script>
-    </head>
-
+  </head>
+  <body>
+    <h1>404 Not Found</h1>
+  </body>
 </html>
